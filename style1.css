@@ -1,0 +1,54 @@
+
+body {
+	    background-color: #888888;
+        background-image: url(sf4.png);
+}
+
+h1 { 
+	text-align: center;
+    text-decoration: overline;
+    font-style: italic;
+}
+
+
+.big {
+	margin: inherit;
+    margin-bottom: 10px;
+    margin-left: 65px;
+}
+
+h3 {
+	text-align: center;
+    font-style: italic;
+    color: #a9a9a9;
+    text-decoration: overline;
+}
+
+ a {
+    font-size: larger;
+    font-family: fantasy;
+    color: #883131;
+}
+
+p {
+    font-size: larger;
+    font-family: inherit;
+    color: #f7e6df;
+    text-align: center;
+}
+
+ a.simple {
+    float: left;
+    margin: 4px 10px 2px 10px;
+ }
+
+ #afterimg {
+    position: absolute;
+    top: 360px;
+}
+
+
+ .top {
+            height: 300px;
+    width: 864px;
+ }
