@@ -6,10 +6,12 @@
 <meta name="description" content="CNIT 133M Online Semester Schedule - Fall 2018">
     <link rel="stylesheet" type="text/css" href="style1.css" />
 
-    </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-        <h1>Simple HTML & CSS Page</h1>
-<div class="big">
+   </head>
+
+        <h1 id="new">Simple HTML & CSS Page</h1>
+<header class="big">
     <br>
 
         <div class="top">
@@ -30,7 +32,7 @@
             </p>
         </div>
         </div>
-          <h1> Technologis for this class</h1>
+          <h1> Technologies for this class</h1>
           <ul>
             <li>HTML</li>
             <li>CSS</li>
@@ -42,7 +44,10 @@
             <li><a href="https://www.lynda.com/" target="_blank">Lynda.com</a>- Lynda offers thousands of courses on various topics, including HTML</li>
             <li><a href="https://www.udemy.com/" target="_blank">Udemy.com</a>- Study any topic, anytime. Explore thousands of courses</li>
         </ul>
-   </div>
+   </header>
+
+   <button>Start Animation</button>
+
    <div class="footer"> 
    <p>
 <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkatyaraukach.github.io%2Findex.html">
@@ -57,8 +62,16 @@ alt="Valid CSS!" />
 </a>
 </p>
 </div>
-<!--last update-->
-<script type="text/javascript">
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#new").css({"font-size": "55px",});
+        $("#new").css({"color": "#00ffec", "font-size": "30px",}).delay( 800 );
+
+    });
+});
+</script>
+<script>
 var dateModified = document.lastModified;
 mydate = dateModified.slice(0,16);
 document.write("Last updated: " + mydate);
