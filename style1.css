@@ -34,21 +34,40 @@ p {
     font-size: larger;
     font-family: inherit;
     color: #f7e6df;
-    text-align: center;
+    text-align: inherit;
 }
+
+#p2 {
+    position: relative;
+    
+    clear: left;
+}
+h
 
  a.simple {
     float: left;
     margin: 4px 10px 2px 10px;
  }
 
- #afterimg {
-    position: absolute;
-    top: 360px;
-}
+ #after {
+        position: absolute;
+        top: 354px;
+    }
 
 
  .top {
-            height: 300px;
-    width: 864px;
+            height: 320px;
+            width: 864px;
  }
+
+ .footer {
+        text-align: center;
+ }
+
+
+#photo {
+   border: 0px solid #00f1f5;
+    float: left;
+     width: 317px;
+    height: 241px;
+    margin: 12px;}

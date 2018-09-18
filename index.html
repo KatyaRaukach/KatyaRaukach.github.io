@@ -16,21 +16,18 @@
 
         <div class="top">
 
-               <img src="HW1.jpg" alt="My photo"
-               style="float:left;width:317px;height:241px;">
+               <img id="photo" src="HW1.jpg" alt="My photo">
 
             <p>
              Hi! My name is Kate. Welcome everyone to my page.<br>
              I'm a student of CCSU for 2 years.<br>
              I like drawing, listening to music and travelling.<br>
               </p>
-
-        <div id="afterimg">
-            <p>
+            <br>
+            <p id="p2">
                 I am taking this class because I have developed a deep interest in computer networking and information technologyes pecially <br> after my experience at my current job in which I hope to transition to a Front-End Web Development.
 
             </p>
-        </div>
         </div>
           <h1> Technologies for this class</h1>
           <ul>
@@ -44,9 +41,9 @@
             <li><a href="https://www.lynda.com/" target="_blank">Lynda.com</a>- Lynda offers thousands of courses on various topics, including HTML</li>
             <li><a href="https://www.udemy.com/" target="_blank">Udemy.com</a>- Study any topic, anytime. Explore thousands of courses</li>
         </ul>
-   </header>
 
-   <button>Start Animation</button>
+ <button>Start Animation</button>
+ </header>
 
    <div class="footer"> 
    <p>
@@ -63,11 +60,22 @@ alt="Valid CSS!" />
 </p>
 </div>
 <script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $("#new").css({"font-size": "55px",});
-        $("#new").css({"color": "#00ffec", "font-size": "30px",}).delay( 800 );
 
+$(document).ready(() => {
+    // call the animations upon the click of the button
+    $('#animation').on('click', function () {
+
+        /*animates the border width so that the properties applied in the css become visible*/
+        $('#photo').animate({
+            borderWidth: '2px'
+        });
+
+        /*selects the h1 and animates font-size large, changes color and animates it back to small*/
+        $('#new').animate({
+            fontSize: '3rem'
+        }).animate({
+            fontSize: '2rem'
+        }).css('color', '#00f1f5');
     });
 });
 </script>
