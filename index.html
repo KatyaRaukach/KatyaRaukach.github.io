@@ -20,7 +20,7 @@
 
             <p>
              Hi! My name is Kate. Welcome everyone to my page.<br>
-             I'm a student of CCSU for 2 years.<br>
+             I'm a student of CCSF for 2 years.<br>
              I like drawing, listening to music and travelling.<br>
               </p>
             <br>
@@ -42,7 +42,7 @@
             <li><a href="https://www.udemy.com/" target="_blank">Udemy.com</a>- Study any topic, anytime. Explore thousands of courses</li>
         </ul>
 
- <button>Start Animation</button>
+ <button id="animation">Start Animation</button>
  </header>
 
    <div class="footer"> 
@@ -62,15 +62,12 @@ alt="Valid CSS!" />
 <script>
 
 $(document).ready(() => {
-    // call the animations upon the click of the button
-    $('#animation').on('click', function () {
 
-        /*animates the border width so that the properties applied in the css become visible*/
+    $('#animation').on('click', function () {
         $('#photo').animate({
             borderWidth: '2px'
         });
 
-        /*selects the h1 and animates font-size large, changes color and animates it back to small*/
         $('#new').animate({
             fontSize: '3rem'
         }).animate({
