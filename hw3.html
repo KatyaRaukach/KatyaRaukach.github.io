@@ -30,7 +30,7 @@
                       .append("g")
                       .attr("transform","translate(100,100)");
 
-        d3.csv("MyCitypopulation.csv", function(data){
+        d3.json("hw3.json", function(data){
           x.domain(data.map(function(d){ return d.term; }));
           y.domain([d3.max(data, function(d){ return d.students;}), 0]);
         
@@ -82,12 +82,12 @@
        <div class="footer"> 
      <p>
        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkatyaraukach.github.io%2Findex.html">
-       <img style="border:0;width:100px;height:45px" src="https://web.csulb.edu/~amanabat/img/w3clogo.png"
+       <img style="border:0;width:100px;height:45px" src="http://web.csulb.edu/~amanabat/img/w3clogo.png"
        alt="HTML5"></a> 
     </p>
      <p>
     <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkatyaraukach.github.io%2Fstyle1.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
-    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
 </a>
 </p>
 <script>
