@@ -30,7 +30,7 @@
                       .append("g")
                       .attr("transform","translate(100,100)");
 
-        d3.csv("hw3.csv", function(data){
+        d3.csv("MyCitypopulation.csv", function(data){
           x.domain(data.map(function(d){ return d.term; }));
           y.domain([d3.max(data, function(d){ return d.students;}), 0]);
         
