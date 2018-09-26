@@ -35,7 +35,7 @@
     var g = svg.append("g")
        .attr("transform", "translate(" + 100 + "," + 100 + ")");
     
-    d3.csv("students.csv", function(err, data) {
+    d3.csv("hw3.csv", function(err, data) {
       console.log(err, data)
        if (err) { throw err; }
        x.domain(data.map(function(d) { return d.year; }));
