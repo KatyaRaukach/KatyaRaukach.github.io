@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="D3 homework">
-<title>D3 Homework</title>
+<title>Homework CNIT 133M</title>
+<meta name="description" content="CNIT 133M Online Semester Schedule - Fall 2018">
 <style>
 #chart rect{
   fill: #4aaeea;
@@ -66,7 +66,7 @@ var graph = d3.select('#chart')
               .append('svg')
               .attr('width', width + margin.left + margin.right)
               .attr('height', height + margin.top + margin.bottom)
-              .style('background', '#788180')
+              .style('background', '#ada9a7')
               .append('g')
               .attr('transform', 'translate(' + margin.left + ', ' + margin.top + ')');
               
@@ -74,7 +74,7 @@ graph.selectAll('rect')
      .data(hw3data)
      .enter()
      .append('rect')
-     .style('fill', '#DC76A8')
+     .style('fill', '#0b6b65')
      .attr('width', xS.bandwidth)
      .attr('height', function(d) { return yS(d.students); })
      .attr('x', function(d, i) {return xS(d.term, i); })
@@ -98,4 +98,16 @@ graph.append('g')
   .call(d3.axisBottom(xS))
   .attr('transform', 'translate(0, ' + height + ')');
 </script>
+   <p>
+<a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkatyaraukach.github.io%2Findex.html">
+<img style="border:0;width:100px;height:45px" src="http://web.csulb.edu/~amanabat/img/w3clogo.png"
+alt="HTML5"></a> 
+</p>
+<p>
+<a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkatyaraukach.github.io%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+<img style="border:0;width:88px;height:31px"
+ src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+alt="Valid CSS!" />
+</a>
+</p>
 </html>
