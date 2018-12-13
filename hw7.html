@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="CNIT-133M-HW4">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CNIT-133M - Homework 4</title>
+    <link rel="stylesheet" href="pwa.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="sw.js"></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Homework 4: PWA</h1>
+</header>
+
+<section>
+
+  <label for="backgrounds">Choose the Background Image:</label>
+    <select id="backgrounds">
+      <option value="0">Select Image</option>
+      <option value="download.jpeg">Light Gold</option>
+      <option value="img.jpg">Light Blue</option>
+  </select>
+
+
+  <h2>The main characteristics of a PWA (Progressive Web Application)</h2>
+  <p>Full responsiveness and browser compatibility. <br>
+  These apps are built according to progressive enhancement principles. Progressive enhancement is the web design strategy of providing the basic functionality and content to everyone regardless of browsers they use or connection quality while delivering more sophisticated page versions to users whose newer browsers can support them. So, PWAs work with all browsers and are compatible with any device, regardless of screen size and other specifications. Tablet and mobile users will have the same experience. You can even adjust the app to the desktop if needed.</p>
+  <p>Connectivity independence. <br>
+  Progressive web applications can work both offline and on low-quality networks.</p>
+  <p>App-like interface. <br>
+  These apps mimic navigation and interactions of native apps.</p>
+  <p>Push notifications. <br>
+  If used as a part of a good messaging strategy, push notifications can keep customers interested, motivating them to open and use an app more.</p>
+  <p>Self-updates. <br>
+  Able to update themselves automatically, apps stay fresh.</p>
+  <p>Safety. <br>
+  These apps are served through HTTPS, so unauthorized users can’t access their content.</p>
+  <p>Discoverability and easy installation. <br>
+  While search engines classify PWAs as applications, they are not distributed via app stores. These apps can be shared through a URL instead so they’re easily found. The installation is simple and entails visiting a site and adding it to a device home screen.</p>
+</section>
+
+<footer>
+
+</footer>
+
+<script>
+
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+
+    $(function () {
+        $('#backgrounds').on('change', function () {
+            var backImg = $('option:selected', this).val();
+            $('section').css('background-image', 'url(' + backImg + ')');
+        });
+    });
+</script>
+<script src="main.js"></script>
+
+ </div>
+
+           <div class="footer"> 
+     <p>
+       <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fkatyaraukach.github.io%2Fhw4.html">
+       <img style="border:0;width:100px;height:45px" src="https://web.csulb.edu/~amanabat/img/w3clogo.png"
+       alt="HTML5"></a> 
+    </p>
+     <p>
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fkatyaraukach.github.io%2Fstyle4.css&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">
+    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!" />
+</a>
+</p>
+</div>
+</body>
+
+
+</html>
